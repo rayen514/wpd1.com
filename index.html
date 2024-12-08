@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie de vidéos</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .video-item {
+            background-color: #1e1e1e;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px; /* Taille ajustée pour un meilleur rendu */
+            border-radius: 8px;
+            border: none;
+        }
+
+        .video-description {
+            font-size: 18px;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #ff4747; /* Couleur rouge pour la description */
+            text-align: center;
+            word-wrap: break-word;
+        }
+
+        .profile-name {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            color: #ffdd00;
+            margin-top: 10px;
+        }
+
+        .video-item:hover {
+            background-color: #2a2a2a;
+            cursor: pointer;
+        }
+
+        /* Pour les petits écrans (Android et appareils mobiles) */
+        @media only screen and (max-width: 600px) {
+            iframe {
+                height: 250px; /* Taille ajustée pour les appareils mobiles */
+            }
+
+            .video-description {
+                font-size: 14px;
+            }
+
+            .profile-name {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <!-- Première vidéo -->
+        <div class="video-item">
+            <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe src="https://app.videas.fr/embed/media/9a6d623f-76ed-4033-82f3-df45fc987b87/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" style="position: absolute; top: 0; left: 0" referrerpolicy="unsafe-url"></iframe>
+            </div>
+            <p class="video-description">This motherfucker was brutally murdered</p>
+            <p class="profile-name">zokill</p>
+        </div>
+
+        <!-- Deuxième vidéo -->
+        <div class="video-item">
+            <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe src="https://app.videas.fr/embed/media/74694eb3-5e17-4352-a10d-2f7f2b218c69/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" style="position: absolute; top: 0; left: 0" referrerpolicy="unsafe-url"></iframe>
+            </div>
+            <p class="video-description">He was brutally slaughtered</p>
+            <p class="profile-name">zokill</p>
+        </div>
+
+        <!-- Troisième vidéo -->
+        <div class="video-item">
+            <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe src="https://app.videas.fr/embed/media/9fc4a305-c917-4ec6-8272-074a9a79ca13/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" style="position: absolute; top: 0; left: 0" referrerpolicy="unsafe-url"></iframe>
+            </div>
+            <p class="video-description">His head was blown off in a wonderful way</p>
+            <p class="profile-name">zokill</p>
+        </div>
+
+        <!-- Quatrième vidéo -->
+        <div class="video-item">
+            <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe src="https://app.videas.fr/embed/media/ea8f78f0-ddab-4a84-bee0-0cf7bcd66aa1/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" style="position: absolute; top: 0; left: 0" referrerpolicy="unsafe-url"></iframe>
+            </div>
+            <p class="video-description">Collective death</p>
+            <p class="profile-name">zokill</p>
+        </div>
+    </div>
+
+</body>
+</html>
